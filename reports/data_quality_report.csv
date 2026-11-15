@@ -1,0 +1,11 @@
+Audit_Check,Entity,Status,Details
+Missing Values Check,calendar,PASSED,"7812 nulls found (Expected in calendar event columns: ['event_name_1', 'event_type_1', 'event_name_2', 'event_type_2'])"
+Missing Values Check,sell_prices,PASSED,0 nulls found (Expected in calendar event columns: 0)
+Missing Values Check,sales_train_validation,PASSED,0 nulls found (Expected in calendar event columns: 0)
+Primary Key Uniqueness,calendar (date),PASSED,0 duplicate dates
+Primary Key Uniqueness,"sell_prices (store, item, week)",PASSED,0 duplicates
+Primary Key Uniqueness,sales (id),PASSED,0 duplicate series IDs
+Date Continuity Check,calendar,PASSED,Full continuity verified: 1969 consecutive days from 2011-01-29 to 2016-06-19 (0 gaps)
+Referential Integrity (Sales -> Prices),sales_train_validation & sell_prices,PASSED,0 sales items missing from pricing table.
+Value Boundaries (Sales >= 0),sales_train_validation,PASSED,0 negative sales values detected.
+Value Boundaries (Price > 0),sell_prices,PASSED,0 non-positive prices detected.

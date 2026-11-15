@@ -1,0 +1,26 @@
+Table,Column,Data Type,Nullable,Description,Business Meaning
+calendar,date,string (YYYY-MM-DD),No,Calendar date,Gregorian date of sale
+calendar,wm_yr_wk,int16,No,Walmart fiscal year-week ID,Fiscal grouping identifier for weekly pricing
+calendar,weekday,category,No,Name of the day,Day of week (Saturday to Friday in Walmart fiscal calendar)
+calendar,wday,int8,No,Day of week integer (1-7),"1=Saturday, 2=Sunday, ..., 7=Friday"
+calendar,month,int8,No,Calendar month (1-12),Month of the year for seasonality modeling
+calendar,year,int16,No,Calendar year,Fiscal/calendar year indicator
+calendar,d,string,No,Day token (d_1 to d_1969),Foreign key joining to sales day columns
+calendar,event_name_1,string,Yes,Primary holiday or promotional event name,"Cultural, sporting, or national event influencing traffic"
+calendar,event_type_1,category,Yes,Category of primary event,"Sporting, Cultural, National, Religious"
+calendar,event_name_2,string,Yes,Secondary event name if date has multiple events,Concurrent holiday/promotional driver
+calendar,event_type_2,category,Yes,Category of secondary event,Secondary event classification
+calendar,snap_CA,int8,No,SNAP food stamp indicator for California (0/1),Government assistance disbursement window (drives volume spikes)
+calendar,snap_TX,int8,No,SNAP indicator for Texas (0/1),Disbursement window for Texas stores
+calendar,snap_WI,int8,No,SNAP indicator for Wisconsin (0/1),Disbursement window for Wisconsin stores
+sell_prices,store_id,category,No,"Store identifier (e.g., CA_1)",Specific physical retail store location
+sell_prices,item_id,string,No,Product item identifier,Unique SKU code within the product hierarchy
+sell_prices,wm_yr_wk,int16,No,Walmart fiscal year-week ID,Foreign key joining to calendar.wm_yr_wk
+sell_prices,sell_price,float32,No,Retail selling price (USD),Shelf price per unit sold for that week
+sales_train_validation,id,string,No,Compound unique series ID,Unique combination of item_id and store_id
+sales_train_validation,item_id,string,No,Product item identifier,Product SKU
+sales_train_validation,dept_id,category,No,"Department identifier (e.g., HOBBIES_1)",Merchandise category sub-group
+sales_train_validation,cat_id,category,No,"Category identifier (e.g., HOBBIES)",Highest-level merchandise category
+sales_train_validation,store_id,category,No,"Store identifier (e.g., CA_1)",Physical store location
+sales_train_validation,state_id,category,No,"US State identifier (CA, TX, WI)",Geographic state
+sales_train_validation,d_1 to d_1913,int16,No,Daily unit sales counts,Physical quantity sold on historical day t

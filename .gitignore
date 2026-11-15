@@ -1,0 +1,46 @@
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Large raw datasets (download via Kaggle or Zenodo)
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.parquet
+!data/raw/.gitkeep
+!data/raw/sample_*.csv
+
+# Processed intermediate data (exclude very large files, keep samples)
+data/processed/*.parquet
+data/processed/*.db
+!data/processed/.gitkeep
+
+# Saved Model binaries
+models/*.bin
+models/*.pkl
+models/*.joblib
+!models/.gitkeep
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
