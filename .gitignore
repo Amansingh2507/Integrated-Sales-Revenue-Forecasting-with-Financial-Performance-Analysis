@@ -23,6 +23,7 @@ data/raw/*.parquet
 # Processed intermediate data (exclude very large files, keep samples)
 data/processed/*.parquet
 data/processed/*.db
+!data/processed/retail_analytics.db
 !data/processed/.gitkeep
 
 # Saved Model binaries

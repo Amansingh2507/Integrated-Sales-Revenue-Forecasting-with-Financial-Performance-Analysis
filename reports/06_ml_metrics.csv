@@ -1,0 +1,4 @@
+Model,MAE,RMSE,WAPE (%),Forecast Bias (%)
+Random_Forest,8.54,9.97,12.53,1.95
+SARIMAX,8.68,10.28,12.73,2.42
+XGBoost,8.84,10.23,12.96,2.56

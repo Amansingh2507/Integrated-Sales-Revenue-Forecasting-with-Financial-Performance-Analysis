@@ -1,0 +1,4 @@
+Scenario,Forecast Units,Gross Revenue ($),COGS ($),Gross Profit ($),Gross Margin (%),Operating Profit ($),Operating Margin (%)
+"Pessimistic (-15% Vol, -3% Px, +2% COGS)",1653,17386.75,10779.77,6606.98,38.0,2541.4,14.62
+Base Case (Expected / Champion ML),1948,21124.46,12674.68,8449.78,40.0,4097.33,19.4
+"Optimistic (+15% Vol, +2% Px, -1% COGS)",2238,24759.6,14608.15,10151.45,41.0,5559.27,22.45

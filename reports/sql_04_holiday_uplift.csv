@@ -1,0 +1,8 @@
+event_classification,event_type_1,day_count,avg_daily_units,avg_daily_revenue
+Easter,Cultural,6,128.7,1445.96
+SuperBowl,Sporting,6,121.3,1386.28
+NewYear,National,5,112.2,1253.31
+Thanksgiving,National,5,94.8,1043.64
+Non-Event Days,,1881,69.8,781.59
+LaborDay,National,5,68.6,731.8
+Christmas,Cultural,5,0.0,0.0

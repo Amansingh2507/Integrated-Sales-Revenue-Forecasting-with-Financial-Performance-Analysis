@@ -1,0 +1,4 @@
+Model,Fold 1 (Days 1830-1857),Fold 2 (Days 1858-1885),Fold 3 (Days 1886-1913),Mean_WAPE (%)
+Holt_Winters,17.58,17.32,13.07,15.99
+Random_Forest,17.66,17.68,14.3,16.55
+Seasonal_Naive,19.51,19.47,30.54,23.17
