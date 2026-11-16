@@ -30,6 +30,8 @@ def load_daily_data():
     path = root / 'data' / 'processed' / 'daily_store_revenue.csv'
     df = pd.read_csv(path)
     df['date'] = pd.to_datetime(df['date'])
+    if 'weekday' not in df.columns:
+        df['weekday'] = df['date'].dt.day_name()
     return df
 
 @cache_decorator(ttl=3600)

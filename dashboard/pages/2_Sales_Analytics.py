@@ -41,6 +41,9 @@ date_range = st.sidebar.slider(
 filtered_df = df_daily[(df_daily['date'] >= pd.to_datetime(date_range[0])) & 
                        (df_daily['date'] <= pd.to_datetime(date_range[1]))].copy()
 
+if 'weekday' not in filtered_df.columns:
+    filtered_df['weekday'] = filtered_df['date'].dt.day_name()
+
 # Summary Metric Row
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Selected Days", f"{len(filtered_df):,} days")
