@@ -1,5 +1,8 @@
 # Integrated Sales & Revenue Forecasting with Financial Performance Analysis
 ### An End-to-End Time-Series Forecasting, Financial Modelling and Business Intelligence System Using Python, SQL, Machine Learning, Google Colab and Streamlit.
+## 🚀 Live Project
+
+[Retail Sales Forecasting Dashboard](https://retail-forecasting-fpa.streamlit.app/)
 
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
